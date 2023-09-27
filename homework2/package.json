@@ -1,0 +1,14 @@
+{
+  "name": "figma pattern",
+  "version": "1.0.0",
+  "description": "A sample project description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Name",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
