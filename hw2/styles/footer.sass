@@ -1,0 +1,87 @@
+@import "mixins"
+.footer
+  display: flex
+  max-width: 100%
+  margin: auto
+  padding-left: 20px
+  align-items: center
+  justify-content: space-between
+  @media (max-width: $breakpoint-mobile-max)
+    display: flex
+    flex-direction: column
+
+
+
+.left
+  display: block
+  width: 310px
+  p
+    color: #475467
+
+.footer__icons
+  display: inline-block
+  width: auto
+
+.bottom
+  display: flex
+  align-items: center
+  justify-content: space-between
+  p
+    color: #5f6980
+
+
+.footer__coloumn
+  display: flex
+  columns: 3 auto
+  height: 200px
+  @media (max-width: $breakpoint-mobile-max)
+    display: flex
+    flex-direction: column
+    width: 100%
+    img
+      width: 20px
+      height: 20px
+
+
+.coloumn__elem
+  display: inline-block
+  margin-right: 120px
+  img
+    display: none
+  @media (max-width: $breakpoint-mobile-max)
+    p
+      display: none
+    h5
+      display: block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    img
+      display: block
+
+.company
+  display: flex
+
+.selectors
+  display: flex
+  width: 100%
+  justify-content: space-between
+  margin: 24px
+  @media (max-width: $breakpoint-mobile-max)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.language
+  display: flex
+  width: auto
+  height: auto
+
+.horizontal-line
+  display: none
+  border-top: 1px solid #d0d5dd
+  width: 100%
+  margin-right: 20px
+  @media (max-width: $breakpoint-mobile-max)
+    display: flex
+

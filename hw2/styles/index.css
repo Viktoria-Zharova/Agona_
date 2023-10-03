@@ -1,0 +1,426 @@
+@charset "UTF-8";
+* {
+  font-family: Poppins sans-serif;
+}
+
+.header {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-left-img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .overlay-left-img {
+    display: none;
+  }
+}
+
+.overlay-right-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .overlay-right-img {
+    display: none;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  margin: 20px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation img {
+  margin-right: 40px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .navigation img {
+    display: none;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons img {
+  margin-left: 40px;
+}
+@media (max-width: 767px) {
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .icons__media {
+    display: block;
+  }
+}
+
+.icon__mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .icon__mobile {
+    display: block;
+  }
+}
+
+.content {
+  position: relative;
+  font-family: Poppins sans-serif;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+.text {
+  margin: 120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+.main {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main img {
+  display: flex;
+  align-items: center;
+}
+
+.container_brands {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .container_brands {
+    flex-wrap: wrap;
+  }
+}
+.container_brands img {
+  margin: 48px;
+}
+
+.left-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+@media (max-width: 767px) {
+  .left-img {
+    display: none;
+  }
+}
+
+/*не смогла разобраться, почему не скрываются при медиа запросе */
+.right-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media (max-width: 767px) {
+  .right-img {
+    display: none;
+  }
+}
+
+.container_banners {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .container_banners {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.main__content {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.container_banner {
+  margin-top: 24px;
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  background-image: url("img/BannerImage.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (max-width: 767px) {
+  .container_banner {
+    background-image: url("img/BannerImage_mini.png");
+  }
+}
+
+.overlay-text {
+  width: 478px;
+  color: azure;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+}
+
+.button {
+  width: 134px;
+  height: 52px;
+  background-color: black;
+  display: inline-block;
+  text-align: center;
+}
+.button p {
+  color: azure;
+}
+
+.main__content-form {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cecece;
+  border-radius: 16px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .main__content-form {
+    flex-wrap: wrap;
+    display: grid;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 480px;
+}
+.form hr {
+  border-top: 1px solid #d0d5dd;
+  width: auto;
+}
+@media (max-width: 767px) {
+  .form {
+    flex-wrap: wrap;
+    display: block;
+    justify-content: flex-start;
+  }
+  .form p {
+    margin-left: -80%;
+  }
+}
+
+.bottom__mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .bottom__mobile {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    display: block;
+  }
+}
+
+.form__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .form__actions {
+    display: none;
+  }
+}
+
+.navigation__mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .navigation__mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-ExtraLight.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.footer {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.left {
+  display: block;
+  width: 310px;
+}
+.left p {
+  color: #475467;
+}
+
+.footer__icons {
+  display: inline-block;
+  width: auto;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom p {
+  color: #5f6980;
+}
+
+.footer__coloumn {
+  display: flex;
+  columns: 3 auto;
+  height: 200px;
+}
+@media (max-width: 767px) {
+  .footer__coloumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer__coloumn img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.coloumn__elem {
+  display: inline-block;
+  margin-right: 120px;
+}
+.coloumn__elem img {
+  display: none;
+}
+@media (max-width: 767px) {
+  .coloumn__elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .coloumn__elem p {
+    display: none;
+  }
+  .coloumn__elem h5 {
+    display: block;
+  }
+  .coloumn__elem img {
+    display: block;
+  }
+}
+
+.company {
+  display: flex;
+}
+
+.selectors {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 24px;
+}
+@media (max-width: 767px) {
+  .selectors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.language {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.horizontal-line {
+  display: none;
+  border-top: 1px solid #d0d5dd;
+  width: 100%;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .horizontal-line {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
